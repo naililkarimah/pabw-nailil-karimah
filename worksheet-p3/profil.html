@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <!--
   KERANGKA AWAL — Halaman Profil Saya
   PABW 2026/2027 · Pertemuan 3
@@ -8,10 +9,8 @@
   2. Ganti setiap tulisan TODO dengan isi milik Anda SENDIRI
   3. Simpan, lalu buka di peramban (F5 untuk memuat ulang)
   4. Kerjakan berurutan mengikuti Lembar B, C, D, dan E pada worksheet
-
-  Jangan menghapus komentar TODO sebelum bagian itu Anda kerjakan —
-  komentar itu adalah daftar periksa Anda sendiri.
 -->
+
 <html lang="id">
 
 <head>
@@ -28,22 +27,37 @@
 
     <nav aria-label="Navigasi utama">
       <ul>
-        <li><a href="#daftar-tempat">Daftar Tempat</a></li>
-        <li><a href="#tips">Tips Memilih Tempat</a></li>
-        <li><a href="#tambah-rekomendasi">Tambah Rekomendasi</a></li>
+        <li>
+          <a href="#daftar-tempat">Daftar Tempat</a>
+        </li>
+
+        <li>
+          <a href="#tambah-rekomendasi">Tambah Rekomendasi</a>
+        </li>
+
+        <li>
+          <a href="#daftar-tempat">Tentang Halaman</a>
+        </li>
       </ul>
     </nav>
   </header>
 
+
   <!-- C.2 -->
   <main>
 
+    <!-- Section 1 -->
     <section id="daftar-tempat">
+
       <h2>Daftar Tempat Ngopi</h2>
+
 
       <!-- D.1 -->
       <table>
-        <caption>Rekomendasi Tempat Ngopi di Yogyakarta</caption>
+
+        <caption>
+          Rekomendasi Tempat Ngopi di Yogyakarta
+        </caption>
 
         <thead>
           <tr>
@@ -54,6 +68,7 @@
         </thead>
 
         <tbody>
+
           <tr>
             <th scope="row">Kopi Klotok</th>
             <td>Pakem</td>
@@ -71,35 +86,95 @@
             <td>Yogyakarta</td>
             <td>Nyaman untuk bersantai</td>
           </tr>
+
         </tbody>
+
       </table>
+
 
       <!-- D.2 -->
       <figure>
+
         <img
           src="tempat-ngopi.jpg"
           alt="Meja bar kopi dengan mesin espresso, alat pour-over, dan lampu gantung di atas meja marmer"
           width="640"
           height="360"
           loading="lazy">
-        <figcaption>Suasana tempat ngopi di Yogyakarta.</figcaption>
+
+        <figcaption>
+          Suasana tempat ngopi di Yogyakarta.
+        </figcaption>
+
       </figure>
 
     </section>
 
+
+    <!-- Section 2 -->
     <section id="tambah-rekomendasi">
+
       <h2>Tambah Rekomendasi</h2>
 
-      <!-- Form akan dibuat pada Bagian E -->
+
+      <!-- E.1 -->
+      <form action="/simpan" method="post">
+
+        <p>
+          <label for="nama-tempat">Nama Tempat</label>
+
+          <input
+            type="text"
+            id="nama-tempat"
+            name="nama-tempat"
+            required>
+        </p>
+
+
+        <p>
+          <label for="lokasi">Lokasi</label>
+
+          <input
+            type="text"
+            id="lokasi"
+            name="lokasi"
+            required>
+        </p>
+
+
+        <p>
+          <label for="rating">Rating</label>
+
+          <input
+            type="number"
+            id="rating"
+            name="rating"
+            min="1"
+            max="5"
+            required>
+        </p>
+
+
+        <button type="submit">
+          Simpan
+        </button>
+
+      </form>
 
     </section>
 
   </main>
 
+
   <!-- C.3 -->
   <footer>
-    <p>Nailil Karimah · 25523077 · 2026</p>
+
+    <p>
+      Nailil Karimah · 25523077 · 2026
+    </p>
+
   </footer>
 
 </body>
+
 </html>
