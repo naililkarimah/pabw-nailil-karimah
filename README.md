@@ -7,7 +7,7 @@ Repo ini memuat pekerjaan mata kuliah Pengembangan Aplikasi Berbasis Web, satu f
 Topik halaman saya: Rekomendasi Tempat Ngopi di Yogyakarta.
 
 - Judul halaman: Rekomendasi Tempat Ngopi di Yogyakarta
-- Deskripsi: Halaman yang berisi beberapa rekomendasi tempat ngopi yang nyaman untuk belajar, mengerjakan tugas, atau bersantai.
+- Deskripsi: Halaman yang berisi beberapa rekomendasi tempat ngopi di Yogyakarta yang nyaman untuk belajar, mengerjakan tugas, bersantai, atau berkumpul dengan teman.
 - Tautan navigasi: Daftar Tempat, Tips Memilih, Tambah Rekomendasi
 - Dua bagian utama: Daftar Tempat Ngopi, Tambah Rekomendasi
 - Kolom tabel: Nama Tempat, Lokasi, Suasana, Rating
