@@ -1,11 +1,161 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rekomendasi Tempat Ngopi Favorit di Yogyakarta</title>
+    <title>Rekomendasi Tempat Ngopi di Yogyakarta</title>
 </head>
+
 <body>
+
+    <header>
+        <h1>Rekomendasi Tempat Ngopi di Yogyakarta</h1>
+
+        <p>
+            Halaman ini berisi beberapa rekomendasi tempat ngopi yang
+            nyaman untuk belajar, mengerjakan tugas, atau bersantai.
+        </p>
+
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li>
+                    <a href="#daftar-tempat">Daftar Tempat</a>
+                </li>
+                <li>
+                    <a href="#tips">Tips Memilih Tempat</a>
+                </li>
+                <li>
+                    <a href="#tambah-rekomendasi">Tambah Rekomendasi</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="daftar-tempat">
+            <h2>Daftar Tempat Ngopi</h2>
+
+            <p>
+                Berikut beberapa tempat ngopi yang dapat menjadi pilihan
+                untuk menikmati kopi dan menghabiskan waktu di Yogyakarta.
+            </p>
+
+            <table>
+                <caption>
+                    Rekomendasi Tempat Ngopi di Yogyakarta
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Nama Tempat</th>
+                        <th scope="col">Lokasi</th>
+                        <th scope="col">Suasana</th>
+                        <th scope="col">Rating</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Kopi Klotok</th>
+                        <td>Kaliurang, Sleman</td>
+                        <td>Tradisional dan santai</td>
+                        <td>5/5</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Epic Coffee</th>
+                        <td>Sleman</td>
+                        <td>Nyaman dan modern</td>
+                        <td>4/5</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Klinik Kopi</th>
+                        <td>Sleman</td>
+                        <td>Tenang dan nyaman</td>
+                        <td>4/5</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <figure>
+                <img
+                    src="tempat-ngopi.jpg"
+                    alt="Suasana tempat ngopi yang nyaman di Yogyakarta"
+                    width="640"
+                    height="360"
+                    loading="lazy"
+                >
+
+                <figcaption>
+                    Ilustrasi suasana tempat ngopi di Yogyakarta.
+                </figcaption>
+            </figure>
+        </section>
+
+
+        <section id="tips">
+            <h2>Tips Memilih Tempat Ngopi</h2>
+
+            <ul>
+                <li>Perhatikan suasana tempat.</li>
+                <li>Pilih tempat yang nyaman untuk kegiatanmu.</li>
+                <li>Perhatikan lokasi dan kemudahan akses.</li>
+                <li>Cek fasilitas yang tersedia.</li>
+            </ul>
+        </section>
+
+
+        <section id="tambah-rekomendasi">
+            <h2>Tambah Rekomendasi</h2>
+
+            <form action="/simpan" method="post">
+
+                <p>
+                    <label for="nama-tempat">Nama Tempat</label>
+                    <input
+                        type="text"
+                        id="nama-tempat"
+                        name="nama-tempat"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="lokasi">Lokasi</label>
+                    <input
+                        type="text"
+                        id="lokasi"
+                        name="lokasi"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="rating">Rating</label>
+                    <input
+                        type="number"
+                        id="rating"
+                        name="rating"
+                        min="1"
+                        max="5"
+                        required
+                    >
+                </p>
+
+                <button type="submit">Simpan Rekomendasi</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Nailil Karimah · 25523077 · 2026
+        </p>
+    </footer>
 
 </body>
 </html>
