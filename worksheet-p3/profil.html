@@ -1,58 +1,45 @@
 <!DOCTYPE html>
-
-<!--
-  KERANGKA AWAL — Halaman Profil Saya
-  PABW 2026/2027 · Pertemuan 3
-
-  Cara pakai:
-  1. Salin berkas ini, ganti nama menjadi profil.html
-  2. Ganti setiap tulisan TODO dengan isi milik Anda SENDIRI
-  3. Simpan, lalu buka di peramban (F5 untuk memuat ulang)
-  4. Kerjakan berurutan mengikuti Lembar B, C, D, dan E pada worksheet
--->
-
 <html lang="id">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Rekomendasi Tempat Ngopi di Yogyakarta</title>
 </head>
 
 <body>
 
-  <!-- C.1 -->
   <header>
     <h1>Rekomendasi Tempat Ngopi di Yogyakarta</h1>
 
-    <nav aria-label="Navigasi utama">
+    <<nav aria-label="Navigasi utama">
       <ul>
         <li>
           <a href="#daftar-tempat">Daftar Tempat</a>
         </li>
 
         <li>
-          <a href="#tambah-rekomendasi">Tambah Rekomendasi</a>
+          <a href="#tips-memilih">Tips Memilih</a>
         </li>
 
         <li>
-          <a href="#daftar-tempat">Tentang Halaman</a>
+          <a href="#tambah-rekomendasi">Tambah Rekomendasi</a>
         </li>
       </ul>
     </nav>
   </header>
 
-
-  <!-- C.2 -->
   <main>
-
-    <!-- Section 1 -->
     <section id="daftar-tempat">
 
       <h2>Daftar Tempat Ngopi</h2>
 
+      <p>
+        Berikut beberapa rekomendasi tempat ngopi yang
+        nyaman untuk belajar, santai, dan bermain dengan teman.
+      </p>
 
-      <!-- D.1 -->
       <table>
 
         <caption>
@@ -64,40 +51,54 @@
             <th scope="col">Nama Tempat</th>
             <th scope="col">Lokasi</th>
             <th scope="col">Suasana</th>
+            <th scope="col">Rating</th>
           </tr>
         </thead>
 
         <tbody>
-
           <tr>
-            <th scope="row">Kopi Klotok</th>
-            <td>Pakem</td>
-            <td>Tradisional dan nyaman</td>
-          </tr>
-
-          <tr>
-            <th scope="row">Klinik Kopi</th>
-            <td>Sleman</td>
-            <td>Tenang dan sederhana</td>
-          </tr>
-
-          <tr>
-            <th scope="row">Kedai Kopi Mataram</th>
+            <th scope="row">Coffe Saray</th>
             <td>Yogyakarta</td>
-            <td>Nyaman untuk bersantai</td>
+            <td>Hangat dan santai</td>
+            <td>4.5</td>
+          </tr>\
+
+          <tr>
+            <th scope="row">Copenhagen</th>
+            <td>Yogyakarta</td>
+            <td>Modern dan artsy</td>
+            <td>4.5</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">28 Coffee</th>
+            <td>Taman Siswa</td>
+            <td>Cozy dan sederhana</td>
+            <td>4.5</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">Arah Coffee</th>
+            <td>Yogyakarta</td>
+            <td>Minimalis dan homey</td>
+            <td>4.4</td>
+          </tr>
+
+          <tr>
+            <th scope="row">Seven Corner</th>
+            <td>Yogyakarta</td>
+            <td>Santai dan casual</td>
+            <td>4.3</td>
           </tr>
 
         </tbody>
 
       </table>
-
-
-      <!-- D.2 -->
+      
       <figure>
-
         <img
           src="tempat-ngopi.jpg"
-          alt="Meja bar kopi dengan mesin espresso, alat pour-over, dan lampu gantung di atas meja marmer"
+          alt="Interior kedai kopi dengan lampu bulat menggantung, kursi dan meja kayu, serta etalase makanan di dekat kasir"
           width="640"
           height="360"
           loading="lazy">
@@ -109,64 +110,106 @@
       </figure>
 
     </section>
+    
+    <section id="tips-memilih">
+      <h2>Tips Memilih Tempat Ngopi</h2>
+      <p>
+        Sebelum memilih tempat ngopi di Yogyakarta, pertimbangkan
+        beberapa hal berikut agar tempat yang dipilih sesuai dengan
+        kebutuhan dan aktivitas yang akan dilakukan.
+      </p>
 
+      <ul>
+        <li>
+          <strong>Perhatikan lokasi.</strong>
+          Pilih tempat yang mudah dijangkau dan sesuai dengan area
+          yang ingin dikunjungi.
+        </li>
+        
+        <li>
+          <strong>Sesuaikan dengan suasana.</strong>
+          Pilih tempat dengan suasana yang sesuai, seperti cozy,
+          tenang, modern, atau santai.
+        </li>
 
-    <!-- Section 2 -->
-    <section id="tambah-rekomendasi">
+        <li>
+          <strong>Periksa rating dan ulasan.</strong>
+          Rating dan ulasan dapat menjadi pertimbangan sebelum
+          memutuskan untuk berkunjung.
+        </li>
 
-      <h2>Tambah Rekomendasi</h2>
+        <li>
+          <strong>Perhatikan kenyamanan.</strong>
+          Pastikan tempat memiliki area duduk yang nyaman untuk
+          belajar, bekerja, bersantai, atau berkumpul bersama teman.
+        </li>
 
-
-      <!-- E.1 -->
-      <form action="/simpan" method="post">
-
-        <p>
-          <label for="nama-tempat">Nama Tempat</label>
-
-          <input
-            type="text"
-            id="nama-tempat"
-            name="nama-tempat"
-            required>
-        </p>
-
-
-        <p>
-          <label for="lokasi">Lokasi</label>
-
-          <input
-            type="text"
-            id="lokasi"
-            name="lokasi"
-            required>
-        </p>
-
-
-        <p>
-          <label for="rating">Rating</label>
-
-          <input
-            type="number"
-            id="rating"
-            name="rating"
-            min="1"
-            max="5"
-            required>
-        </p>
-
-
-        <button type="submit">
-          Simpan
-        </button>
-
-      </form>
-
+        <li>
+          <strong>Sesuaikan dengan kebutuhan.</strong>
+          Jika ingin mengerjakan tugas, pilih tempat yang tenang
+          dan memiliki fasilitas yang mendukung.
+        </li>
+      </ul>
     </section>
+    
+    <section id="tambah-rekomendasi">
+      <h2>Tambah Rekomendasi</h2>
+      <p>
+        Bagikan tempat ngopi favorit kamu dengan mengisi
+        form rekomendasi.
+      </p>
+      
+      <form action="#" method="post">
+        
+        <p>
+          <label for="nama-tempat">Nama Tempat:</label><br>
+          <input
+          type="text" 
+          id="nama-tempat"
+          name="nama-tempat"
+          placeholder="Contoh: 28 Coffee"
+          required>
+        </p>
+        <p>
+          <label for="lokasi">Lokasi:</label><br>
+          <input
+          type="text"
+          id="lokasi"
+          name="lokasi"
+          placeholder="Contoh: Taman Siswa"
+          required>
+        </p>
+        <p>
+          <label for="suasana">Suasana:</label><br>
+          <input
+          type="text"
+          id="suasana"
+          name="suasana"
+          placeholder="Contoh: Cozy dan sederhana"
+          required>
+        </p>
 
+        <p>
+          <label for="rating">Rating:</label><br>
+          <input
+          type="number"
+          id="rating"
+          name="rating"
+          min="1"
+          max="5"
+          step="0.1"
+          placeholder="Contoh: 4.5"
+          required>
+        </p>
+
+        <p>
+          <button type="submit">Simpan Rekomendasi</button>
+        </p>
+      
+      </form>
+    </section>
   </main>
 
-
-  <!-- C.3 -->
   <footer>
 
     <p>
@@ -176,5 +219,4 @@
   </footer>
 
 </body>
-
 </html>
