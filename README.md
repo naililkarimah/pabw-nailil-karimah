@@ -8,7 +8,7 @@ Topik halaman saya: Rekomendasi Tempat Ngopi di Yogyakarta.
 
 - Judul halaman: Rekomendasi Tempat Ngopi di Yogyakarta
 - Deskripsi: Halaman yang berisi beberapa rekomendasi tempat ngopi yang nyaman untuk belajar, mengerjakan tugas, atau bersantai.
-- Tautan navigasi: Daftar Tempat, Tips Memilih Tempat, Tambah Rekomendasi
+- Tautan navigasi: Daftar Tempat, Tips Memilih, Tambah Rekomendasi
 - Dua bagian utama: Daftar Tempat Ngopi, Tambah Rekomendasi
 - Kolom tabel: Nama Tempat, Lokasi, Suasana, Rating
 - Kolom form: Nama Tempat, Lokasi, Rating
@@ -16,4 +16,4 @@ Topik halaman saya: Rekomendasi Tempat Ngopi di Yogyakarta.
 
 ## Catatan penggunaan AI
 
-Menggunakan AI untuk membantu membantu penulisan kode HTML. Pengerjaan dan pengujian halaman dilakukan sendiri.
+Menggunakan AI untuk membantu penulisan kode HTML. Pengerjaan dan pengujian halaman dilakukan sendiri.
