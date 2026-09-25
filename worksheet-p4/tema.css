@@ -1,0 +1,68 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+
+        --color-bg: #1C1714;
+        --color-fg: #F5EDE6;
+        --color-surface: #2A211D;
+        --color-border: #5C4A40;
+        --color-primary: #D6A77A;
+        --color-focus: #E0B58C;
+        --color-danger: #FF8A80;
+        --shadow-1: 0 1px 3px rgba(0, 0, 0, .5);
+    }
+}
+.pengalih-tema {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tombol-tema {
+    display: inline-block;
+
+    padding: var(--space-2) var(--space-4);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    background: var(--color-surface);
+    color: var(--color-fg);
+
+    cursor: pointer;
+}
+
+:root:has(#tema:checked) {
+    color-scheme: dark;
+
+    --color-bg: #1C1714;
+    --color-fg: #F5EDE6;
+    --color-surface: #2A211D;
+    --color-border: #5C4A40;
+
+    --color-primary: #D6A77A;
+    --color-danger: #FF8A80;
+    --color-focus: #E0B58C;
+
+    --shadow-1: 0 1px 2px rgba(0, 0, 0, .5);
+}
+
+:root:has(#tema:not(:checked)) {
+    color-scheme: light;
+
+    --color-bg: #F8FAFC;
+    --color-fg: #0F172A;
+    --color-surface: #FFFFFF;
+    --color-border: #D1D5DB;
+
+    --color-primary: #6F4A37;
+    --color-danger: #B00020;
+    --color-focus: #A67C52;
+
+    --shadow-1: 0 1px 3px rgba(0, 0, 0, .10);
+}
+
+.pengalih-tema:focus-visible + .tombol-tema {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+}
