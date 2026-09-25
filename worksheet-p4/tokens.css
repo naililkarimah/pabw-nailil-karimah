@@ -1,0 +1,37 @@
+:root {
+    --coffee-700: #6f433f;
+    --coffee-500: #a67c52;
+
+    --gray-50: #f8fafc;
+    --gray-900: #0f172a;
+
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+
+    --radius-md: 0.5rem;
+    --radius-full: 9999px;
+
+    --shadow-md: 0 1px 3px rgba(0, 0, 0, .10);
+
+    --text-sm: 0.875rem;
+    --text-md: 1rem;
+    --text-x1: 1.5rem;
+    --text-3xl: 2.25rem;
+}
+
+:root {
+    --color-bg: var(--gray-50);
+    --color-fg: var(--gray-900);
+    --color-surface: #ffffff;
+    --color-border: #d1d5db;
+
+    --color-primary: var(--coffee-700);
+    --color-danger: #B00020;
+    --color-focus: var(--coffee-500);
+
+    --card-pad: var(--space-4);
+    --section-gap: var(--space-6);
+}

@@ -17,3 +17,23 @@ Topik halaman saya: Rekomendasi Tempat Ngopi di Yogyakarta.
 ## Catatan penggunaan AI
 
 Menggunakan AI untuk membantu penulisan kode HTML. Pengerjaan dan pengujian halaman dilakukan sendiri.
+
+## Pertemuan 4 — Design token halaman profil
+
+- Berkas gaya yang akan dibuat: tokens.css, base.css,
+  layout.css, komponen.css, tema.css
+- Warna utama: #6F4E37 (cokelat kopi), dipilih karena sesuai
+  dengan tema halaman rekomendasi tempat ngopi di Yogyakarta.
+
+### Token yang saya tetapkan
+
+| Token | Nilai | Untuk apa |
+|---|---|---|
+| --color-primary | #6F4E37 | tombol, tautan, penanda |
+| --color-fg | #0F172A | warna teks utama |
+| --color-bg | #F8FAFC | latar halaman |
+| --radius-md | 0.5rem | sudut tombol, kartu, input |
+| --space-4 | 1rem | jarak standar antar elemen |
+
+Kriteria selesai saya: mengubah --color-primary di satu baris
+harus mengubah warna tombol, tautan, judul, dan garis fokus.
