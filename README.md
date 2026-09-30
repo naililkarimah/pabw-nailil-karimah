@@ -37,3 +37,41 @@ Menggunakan AI untuk membantu penulisan kode HTML. Pengerjaan dan pengujian hala
 
 Kriteria selesai saya: mengubah --color-primary di satu baris
 harus mengubah warna tombol, tautan, judul, dan garis fokus.
+
+## Pertemuan 5 — Layout Modern: Flexbox dan Grid
+
+Pada Pertemuan 5, halaman profil dikembangkan menggunakan CSS Grid
+dan Flexbox agar susunan elemen lebih terstruktur dan responsif.
+
+### Sketsa kerangka halaman
+
+```text
+┌──────────────────────────────────────────────────────┐
+│                       HEADER                         │
+│  Judul Website       Navigasi              Tema      │
+├──────────────────────────────────────────────────────┤
+│                                                      │
+│                 DAFTAR TEMPAT                        │
+│                                                      │
+│  ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐       │
+│  │ Kartu  │ │ Kartu  │ │ Kartu  │ │ Kartu  │       │
+│  └────────┘ └────────┘ └────────┘ └────────┘       │
+│                                                      │
+│                     Gambar                           │
+│                                                      │
+├──────────────────────┬───────────────────────────────┤
+│    TIPS MEMILIH      │     TAMBAH REKOMENDASI       │
+│                      │                               │
+│  • Perhatikan lokasi │  Nama Tempat                 │
+│  • Sesuaikan suasana │  [____________________]       │
+│  • Periksa rating    │                               │
+│  • Kenyamanan        │  Lokasi                      │
+│  • Kebutuhan         │  [____________________]       │
+│                      │                               │
+│                      │  Rating                      │
+│                      │  [____________________]       │
+│                      │                               │
+│                      │  [Simpan Rekomendasi]         │
+├──────────────────────┴───────────────────────────────┤
+│                       FOOTER                         │
+└──────────────────────────────────────────────────────┘
