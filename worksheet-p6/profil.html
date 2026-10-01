@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rekomendasi Tempat Ngopi di Yogyakarta</title>
+
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+  <link rel="stylesheet" href="responsif.css">
+</head>
+
+<body class="page">
+
+  <header>
+    <div class="header-baris">
+      <h1>Rekomendasi Tempat Ngopi di Yogyakarta</h1>
+      
+      <nav class="navbar" aria-label="Navigasi utama">
+        <ul>
+          <li>
+            <a href="#daftar-tempat">Daftar Tempat</a>
+          </li>
+
+          <li>
+            <a href="#tips-memilih">Tips Memilih</a>
+          </li>
+
+          <li>
+            <a href="#tambah-rekomendasi">Tambah Rekomendasi</a>
+          </li>
+        </ul>
+      </nav>
+      <input type="checkbox" id="tema" class="pengalih-tema">
+      <label for="tema" class="tombol-tema">Tema</label>
+    </div>
+  </header>
+
+  <main class="isi">
+    <section id="daftar-tempat">
+
+      <h2>Daftar Tempat Ngopi</h2>
+
+      <p>
+        Berikut beberapa rekomendasi tempat ngopi yang
+        nyaman untuk belajar, santai, dan bermain dengan teman.
+      </p>
+
+      <div class="katalog">
+        <article class="kartu">
+          <h3>Coffe Saray</h3>
+          <p><strong>Lokasi:</strong> Yogyakarta</p>
+          <p><strong>Suasana:</strong> Hangat dan santai</p>
+          <p><strong>Rating:</strong> 4.5</p>
+        </article>
+
+        <article class="kartu">
+          <h3>Copenhagen</h3>
+          <p><strong>Lokasi:</strong> Yogyakarta</p>
+          <p><strong>Suasana:</strong> Modern dan artsy</p>
+          <p><strong>Rating:</strong> 4.5</p>
+        </article>
+
+        <article class="kartu">
+          <h3>28 Coffee</h3>
+          <p><strong>Lokasi:</strong> Taman Siswa</p>
+          <p><strong>Suasana:</strong> Cozy dan sederhana</p>
+          <p><strong>Rating:</strong> 4.5</p>
+        </article>
+
+        <article class="kartu">
+          <h3>Arah Coffee</h3>
+          <p><strong>Lokasi:</strong> Yogyakarta</p>
+          <p><strong>Suasana:</strong> Minimalis dan homey</p>
+          <p><strong>Rating:</strong> 4.4</p>
+        </article>
+
+        <article class="kartu">
+          <h3>Seven Corner</h3>
+          <p><strong>Lokasi:</strong> Yogyakarta</p>
+          <p><strong>Suasana:</strong> Santai dan casual</p>
+          <p><strong>Rating:</strong> 4.3</p>
+        </article>
+      </div>
+      
+      <figure>
+        <img
+          src="tempat-ngopi.jpg"
+          alt="Interior kedai kopi dengan lampu bulat menggantung, kursi dan meja kayu, serta etalase makanan di dekat kasir"
+          width="640"
+          height="360"
+          loading="lazy">
+
+        <figcaption>
+          Suasana tempat ngopi di Yogyakarta.
+        </figcaption>
+
+      </figure>
+
+    </section>
+    
+    <section id="tips-memilih">
+      <h2>Tips Memilih Tempat Ngopi</h2>
+      <p>
+        Sebelum memilih tempat ngopi di Yogyakarta, pertimbangkan
+        beberapa hal berikut agar tempat yang dipilih sesuai dengan
+        kebutuhan dan aktivitas yang akan dilakukan.
+      </p>
+
+      <ul>
+        <li>
+          <strong>Perhatikan lokasi.</strong>
+          Pilih tempat yang mudah dijangkau dan sesuai dengan area
+          yang ingin dikunjungi.
+        </li>
+        
+        <li>
+          <strong>Sesuaikan dengan suasana.</strong>
+          Pilih tempat dengan suasana yang sesuai, seperti cozy,
+          tenang, modern, atau santai.
+        </li>
+
+        <li>
+          <strong>Periksa rating dan ulasan.</strong>
+          Rating dan ulasan dapat menjadi pertimbangan sebelum
+          memutuskan untuk berkunjung.
+        </li>
+
+        <li>
+          <strong>Perhatikan kenyamanan.</strong>
+          Pastikan tempat memiliki area duduk yang nyaman untuk
+          belajar, bekerja, bersantai, atau berkumpul bersama teman.
+        </li>
+
+        <li>
+          <strong>Sesuaikan dengan kebutuhan.</strong>
+          Jika ingin mengerjakan tugas, pilih tempat yang tenang
+          dan memiliki fasilitas yang mendukung.
+        </li>
+      </ul>
+    </section>
+    
+    <section id="tambah-rekomendasi">
+      <h2>Tambah Rekomendasi</h2>
+      <p>
+        Bagikan tempat ngopi favorit kamu dengan mengisi
+        form rekomendasi.
+      </p>
+      
+      <form action="#" method="post">
+        
+        <div class="form-kolom">
+          <label for="nama-tempat">Nama Tempat:</label>
+          <input
+          type="text" 
+          id="nama-tempat"
+          name="nama-tempat"
+          placeholder="Contoh: 28 Coffee"
+          required>
+          <p class="pesan-galat">
+            Nama tempat tidak boleh kosong.
+          </p>
+        </div>
+
+        <div class="form-kolom">
+          <label for="lokasi">Lokasi:</label>
+          <input
+          type="text"
+          id="lokasi"
+          name="lokasi"
+          placeholder="Contoh: Taman Siswa"
+          required>
+          <p class="pesan-galat">
+            Lokasi tidak boleh kosong.
+          </p>
+        </div>
+
+        <div class="form-kolom">
+          <label for="rating">Rating:</label>
+          <input
+          type="number"
+          id="rating"
+          name="rating"
+          min="1"
+          max="5"
+          step="0.1"
+          placeholder="Contoh: 4.5"
+          required>
+          <p class="pesan-galat">
+            Rating harus diisi dengan angka antara 1 hingga 5.
+          </p>
+        </div>
+        
+        <button type="submit">Simpan Rekomendasi</button>
+      
+      </form>
+    </section>
+  </main>
+
+  <footer>
+
+    <p>
+      Nailil Karimah · 25523077 · 2026
+    </p>
+
+  </footer>
+
+</body>
+</html>
