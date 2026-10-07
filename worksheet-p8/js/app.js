@@ -82,3 +82,7 @@ const totalRating = daftarTempat.reduce(
 );
 
 console.log(totalRating);
+
+console.log("Debugging dimulai");
+
+console.table(daftarTempat);
