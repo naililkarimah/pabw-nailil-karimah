@@ -1,4 +1,5 @@
 import { daftarProyek } from "./app.js";
+import { ambilNotisia } from "./api.js";
 
 const wadah = document.querySelector("#daftar");
 const kosong = document.querySelector("#pesan-kosong");
@@ -39,7 +40,48 @@ function render(daftar) {
   });
 }
 
+
+function gambar(daftar) {
+  const wadahApi = document.querySelector("#daftar-api");
+  wadahApi.textContent = "";
+
+  if (daftar.length === 0) {
+    wadahApi.textContent = "Belum ada notisia";
+    return;
+  }
+
+  daftar.forEach(function (n) {
+    const kartu = document.createElement("article");
+    const judul = document.createElement("h3");
+
+    judul.textContent = n.title;
+
+    kartu.appendChild(judul);
+    wadahApi.appendChild(kartu);
+  });
+}
+
+async function tampilkan() {
+  document.querySelector("#daftar-api").textContent = "Memuat...";
+
+  try {
+    const daftar = await ambilNotisia();
+
+    if (daftar.length === 0) {
+      document.querySelector("#daftar-api").textContent =
+        "Belum ada notisia";
+      return;
+    }
+
+    gambar(daftar);
+  } catch (galat) {
+    document.querySelector("#daftar-api").textContent =
+      "Gagal memuat: " + galat.message;
+  }
+}
+
 render(daftarProyek);
+tampilkan();
 
 const barisFilter = document.querySelector("#filter");
 

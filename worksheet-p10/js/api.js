@@ -1,18 +1,23 @@
 
 const ALAMAT = 'https://jsonplaceholder.typicode.com/posts';
 
-async function muat() {
-  const respons = await fetch(ALAMAT);
+export async function ambilNotisia() {
+  try {
+    await new Promise(resolve => setTimeout(resolve, 3000));
+    const respons = await fetch(ALAMAT);
 
-  console.log('status', respons.status, 'ok', respons.ok);
+    console.log('Status:', respons.status);
+    console.log('OK:', respons.ok);
 
-  if (!respons.ok) {
-    throw new Error('status ' + respons.status);
+    if (!respons.ok) {
+      throw new Error('status ' + respons.status);
+    }
+
+    const data = await respons.json();
+    return data;
+
+  } catch (galat) {
+    console.error('Gagal memuat:', galat.message);
+    throw galat;
   }
-
-  return respons.json();
 }
-
-muat()
-  .then((data) => console.log('Data JSON:', data))
-  .catch((galat) => console.error('Gagal:', galat.message));
