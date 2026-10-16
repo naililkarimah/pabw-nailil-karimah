@@ -75,3 +75,14 @@ dan Flexbox agar susunan elemen lebih terstruktur dan responsif.
 ├──────────────────────┴───────────────────────────────┤
 │                       FOOTER                         │
 └──────────────────────────────────────────────────────┘
+
+## Pertemuan 11 — Modul, State, dan Penyimpanan Klien
+
+### Persiapan Pertemuan 12 — Node.js dan npm
+
+- Node.js: v22.23.2
+- npm: 10.9.8
+
+### Penggunaan AI
+
+AI digunakan untuk membantu memahami konsep JavaScript module, state, localStorage, dan debugging. Saya menjalankan pengujian sendiri, memeriksa hasilnya, serta menyesuaikan kode sesuai worksheet.
