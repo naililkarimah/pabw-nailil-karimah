@@ -75,7 +75,7 @@ dan Flexbox agar susunan elemen lebih terstruktur dan responsif.
 ├──────────────────────┴───────────────────────────────┤
 │                       FOOTER                         │
 └──────────────────────────────────────────────────────┘
-
+```
 ## Pertemuan 11 — Modul, State, dan Penyimpanan Klien
 
 ### Persiapan Pertemuan 12 — Node.js dan npm
