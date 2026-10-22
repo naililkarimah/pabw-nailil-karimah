@@ -1,0 +1,82 @@
+.page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: var(--space-6);
+}
+
+header {
+    padding-block: var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.header-baris {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.isi {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 30rem), 1fr)
+    );
+    gap: var(--space-6);
+    min-width: 0;
+    align-content: start;
+}
+
+#daftar-tempat {
+    grid-column: 1 / -1;
+    min-width: 0;
+}
+
+#tips-memilih,
+#tambah-rekomendasi {
+    min-width: 0;
+}
+
+#tips-memilih {
+    line-height: 1.6;
+}
+
+.sidebar {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-block: var(--space-4);
+
+    border-top: 1px solid var(--color-border);
+    color: var(--color-fg);
+    font-size: var(--text-sm);
+}
